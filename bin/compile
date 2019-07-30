@@ -8,7 +8,7 @@ ENV_DIR=$3
 
 # copy inject_cdata_runtime_env.sh
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
-profile_d_dir="$BUILD_DIR/.prodile.d"
+profile_d_dir="$BUILD_DIR/.profile.d"
 mkdir -p "$profile_d_dir"
 cp "$BP_DIR/.profile.d/inject_cdata_runtime_env.sh" "$profile_d_dir/zz_inject_cdata_runtime_env.sh"
 
